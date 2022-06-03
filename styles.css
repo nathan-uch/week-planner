@@ -68,3 +68,13 @@
 .adjust-textarea-width {
   width: 400px;
 }
+
+.modal-hidden {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(50 50 50 / 90%);
+}
