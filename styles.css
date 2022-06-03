@@ -72,3 +72,16 @@
 .hidden {
   display: none;
 }
+
+.column-one-seventh {
+  width: calc(100% / 7);
+}
+
+.day {
+  padding: 20px;
+  background-color: teal;
+  color: white;
+  box-shadow: 10px 5px 5px black;
+  border-radius: 3px;
+  font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
+}

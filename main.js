@@ -14,9 +14,11 @@ var $modal = document.querySelector('.modal');
 var $dayOfWeek = document.querySelector('.day-of-week');
 var $time = document.querySelector('.time');
 var $description = document.querySelector('.text-area');
+var $dayButton = document.querySelector('.day');
 
 $addEntry.addEventListener('click', addEntry);
 $submit.addEventListener('click', submitFire);
+$dayButton.addEventListener('click', function () {});
 
 function addEntry() {
   $modal.className = 'modal';
