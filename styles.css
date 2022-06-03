@@ -1,5 +1,5 @@
 .container {
-  max-width: 100%;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -14,4 +14,32 @@
 
 .text-center {
   text-align: center;
+}
+
+.adjust-position {
+  justify-content: flex-start;
+}
+
+.add-height {
+  height: 200px;
+}
+
+.add-padding-bottom {
+  padding-bottom: 20px;
+}
+
+.adjust-button-position {
+  justify-content: flex-end;
+}
+
+.add-padding-top {
+  padding-top: 10px;
+}
+
+.adjust-button {
+  border-radius: 5px;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  padding: 5px 10px;
 }
