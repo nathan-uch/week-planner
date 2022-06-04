@@ -9,6 +9,7 @@ var data = {
   currentDay: null
 };
 
+var $form = document.querySelector('form');
 var $addEntry = document.querySelector('#add-entry-btn');
 var $submit = document.querySelector('#submit-btn');
 var $modal = document.querySelector('.modal');
@@ -32,6 +33,7 @@ $dayButton.addEventListener('click', function (event) {
 
 function addEntry() {
   $modal.className = 'modal';
+  $form.reset();
 }
 
 function submitFire() {
@@ -58,10 +60,15 @@ function renderEntry(entry) {
 
 function displayDay(day) {
   var $currentTableRows = document.querySelectorAll('tr');
-  if ($currentTableRows.length < data[day].length + 1) {
+  if ($currentTableRows.length < data[day].length + 1 && data.currentDay === day) {
     $tableBody.replaceChildren('');
     for (var i = 0; i < data[day].length; i++) {
       $tableBody.appendChild(renderEntry(data[day][i]));
+    }
+  } else if (day !== data.currentDay) {
+    $tableBody.replaceChildren('');
+    for (var x = 0; x < data[day].length; x++) {
+      $tableBody.appendChild(renderEntry(data[day][x]));
     }
   }
 }
