@@ -16,13 +16,13 @@
       </div>
     </div>
     <div class="row weekday">
-      <div class="column-one-seventh"><button class="day" data-day="Sunday">Sunday</button></div>
-      <div class="column-one-seventh"><button class="day" data-day="Monday">Monday</button></div>
-      <div class="column-one-seventh"><button class="day" data-day="Tuesday">Tuesday</button></div>
-      <div class="column-one-seventh"><button class="day" data-day="Wednesday">Wednesday</button></div>
-      <div class="column-one-seventh"><button class="day" data-day="Thursday">Thursday</button></div>
-      <div class="column-one-seventh"><button class="day" data-day="Friday">Friday</div>
-      <div class="column-one-seventh"><button class="day" data-day="Saturday">Saturday</button></div>
+      <div class="column-one-seventh"><button class="day" data-day="sunday">Sunday</button></div>
+      <div class="column-one-seventh"><button class="day" data-day="monday">Monday</button></div>
+      <div class="column-one-seventh"><button class="day" data-day="tuesday">Tuesday</button></div>
+      <div class="column-one-seventh"><button class="day" data-day="wednesday">Wednesday</button></div>
+      <div class="column-one-seventh"><button class="day" data-day="thursday">Thursday</button></div>
+      <div class="column-one-seventh"><button class="day" data-day="friday">Friday</div>
+      <div class="column-one-seventh"><button class="day" data-day="saturday">Saturday</button></div>
     </div>
     <div class="row">
       <div class="column-full text-center">
@@ -41,30 +41,30 @@
       <div class="row">
         <div class="adjust-position add-padding-bottom">
           <select class="day-of-week">
-            <option value="">Day of the Week</option>
-            <option value="sun">Sunday</option>
-            <option value="mon">Monday</option>
-            <option value="tues">Tuesday</option>
-            <option value="wed">Wednesday</option>
-            <option value="thurs">Thursday</option>
-            <option value="fri">Friday</option>
-            <option value="sat">Saturday</option>
+            <option value="" disabled="disabled" selected="true">Day of the Week</option>
+            <option value="sunday">Sunday</option>
+            <option value="monday">Monday</option>
+            <option value="tuesday">Tuesday</option>
+            <option value="wednesday">Wednesday</option>
+            <option value="thursday">Thursday</option>
+            <option value="friday">Friday</option>
+            <option value="saturday">Saturday</option>
           </select>
         </div>
         <div>
           <select class="time">
-            <option value="">Time</option>
+            <option value="" disabled="disabled" selected="true">Time</option>
             <option value="8">8:00am</option>
-            <option value="">9:00am</option>
-            <option value="">10:00am</option>
-            <option value="">11:00am</option>
-            <option value="">12:00pm</option>
-            <option value="">1:00pm</option>
-            <option value="">2:00pm</option>
-            <option value="">3:00pm</option>
-            <option value="">4:00pm</option>
-            <option value="">5:00pm</option>
-            <option value="">6:00pm</option>
+            <option value="9">9:00am</option>
+            <option value="10">10:00am</option>
+            <option value="11">11:00am</option>
+            <option value="12">12:00pm</option>
+            <option value="13">1:00pm</option>
+            <option value="14">2:00pm</option>
+            <option value="15">3:00pm</option>
+            <option value="16">4:00pm</option>
+            <option value="17">5:00pm</option>
+            <option value="18">6:00pm</option>
           </select>
         </div>
       </div>
@@ -93,36 +93,12 @@
             <th>Time</th>
             <th>Description</th>
           </tr>
-          <tr>
-            <td id="time"></td>
-            <td id="Description"></td>
-          </tr>
         </thead>
-        <tbody>
-          <tr>
-
-
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-          </tr>
+        <tbody class="table-body">
         </tbody>
-
       </table>
     </div>
   </div>
-
   <script src="main.js"></script>
 </body>
 
